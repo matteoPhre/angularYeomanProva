@@ -1,0 +1,51 @@
+<!--<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <md-button>Splendid</md-button>
+<md-input-container>
+  <label>Color</label>
+  <input type="text" ng-model="color" required md-maxlength="10">
+</md-input-container>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>-->
+    <p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p>
+
+    <md-radio-group ng-model="data.group1">
+
+      <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+      <md-radio-button value="Banana"> Banana </md-radio-button>
+      <md-radio-button value="Mango">Mango</md-radio-button>
+
+    </md-radio-group>
+
+    <div id="loaders" layout="row" layout-align="start center">
+
+    <p>Query and Buffer progress linear indicators: </p>
+
+    <h5>Off</h5>
+    <md-switch
+        ng-model="vm.activated"
+        ng-change="vm.toggleActivation()"
+        aria-label="Enable Indicators">
+      <h5>On</h5>
+    </md-switch>
+  </div>
+
+    <hr>
