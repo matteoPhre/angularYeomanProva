@@ -6,6 +6,9 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -16,15 +19,11 @@
   <script src="bower_components/angular-aria/angular-aria.js"></script>
   <script src="bower_components/angular-messages/angular-messages.js"></script>
   <script src="bower_components/angular-material/angular-material.js"></script>
-  <!--<script src="scripts/app.core.js"></script>-->
   <script src="scripts/app.module.js"></script>
   <script src="scripts/mainCtrl.js"></script>
   <script src="scripts/aboutCtrl.js"></script>
-  <!--<script src="scripts/controllers/main.js"></script>-->
-  <!--<script src="scripts/controllers/about.js"></script>-->
-
   <script src="../bower_components/angular-material/angular-material.min.js"></script>
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
@@ -41,7 +40,6 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <!-- Add your site or application content here -->
   <div class="md-padding">
     <md-nav-bar md-selected-nav-item="currentNavItem"  nav-bar-aria-label="navigation links">
       <md-nav-item md-nav-href="#/" name="page1">Page One</md-nav-item>
@@ -60,16 +58,8 @@
     </div>
   </div>
 
-
-
-
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
   <!-- endbower -->
   <!-- endbuild -->
-
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
-
   <!-- endbuild -->
 </body>
 
