@@ -15,4 +15,13 @@
       <md-button class="md-raised md-warn">Warn</md-button>
       <div class="label">Raised</div>
     </section>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+    <md-button class="md-primary md-raised" ng-click="showConfirm($event)" >
+      Confirm Dialog
+    </md-button>
+    {{status}}
+</section>
+<md-button class="md-primary md-raised edgePadding" ng-click="openFromLeft()" >
+        Open From Left - Close To Right
+      </md-button>
   </md-content>
